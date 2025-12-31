@@ -36,15 +36,12 @@ defineProps({
 })
 
 const router = useRouter()
-
-const goContact = () => {
-  router.push('/contact')
-}
+const goContact = () => router.push('/contact')
 </script>
 
 <style scoped>
 .cta {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: #0f172a; /* dark slate */
   padding: 72px 24px;
   color: #ffffff;
 }
@@ -62,7 +59,7 @@ const goContact = () => {
 
 .subtitle {
   font-size: 16px;
-  color: #e0e7ff;
+  color: #cbd5f5;
 }
 
 .action {
