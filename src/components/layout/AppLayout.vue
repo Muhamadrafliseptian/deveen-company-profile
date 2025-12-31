@@ -4,7 +4,7 @@
       <AppHeader />
     </a-layout-header>
 
-    <a-layout-content class="content">
+    <a-layout-content>
       <slot />
     </a-layout-content>
 
@@ -22,10 +22,6 @@ import AppFooter from './AppFooter.vue'
 <style scoped>
 .header {
   padding: 0 40px;
-}
-
-.content {
-  background: #fff;
 }
 
 .footer {

@@ -2,13 +2,11 @@
   <section class="cta">
     <div class="container">
       <a-row align="middle" justify="space-between" :gutter="[32, 32]">
-        <!-- Text -->
         <a-col :xs="24" :md="16">
           <h2 class="title">{{ title }}</h2>
           <p class="subtitle">{{ subtitle }}</p>
         </a-col>
 
-        <!-- Button -->
         <a-col :xs="24" :md="8" class="action">
           <a-button type="primary" size="large" class="cta-button" @click="goContact">
             {{ buttonText }}
