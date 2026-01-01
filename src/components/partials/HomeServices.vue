@@ -1,118 +1,118 @@
 <template>
-  <section class="section services">
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">
-      We build digital products that help businesses scale efficiently.
-    </p>
+  <section class="services">
+    <div class="container">
+      <h2 class="title">Layanan Kami</h2>
+      <p class="subtitle">
+        Kami merancang dan membangun sistem digital yang stabil, scalable, dan selaras dengan proses
+        bisnis Anda.
+      </p>
 
-    <a-row :gutter="[32, 32]">
-      <a-col :xs="24" :md="8">
-        <a-card hoverable class="service-card">
-          <div class="icon web" />
-          <h3>Web Application</h3>
-          <p>
-            Custom, scalable, and high-performance web applications tailored to your business needs.
-          </p>
-        </a-card>
-      </a-col>
+      <a-row :gutter="[32, 32]">
+        <a-col :xs="24" :md="8">
+          <a-card class="service-card" hoverable>
+            <CodeOutlined class="icon" />
+            <h3>Web Application</h3>
+            <p>
+              Aplikasi web berbasis arsitektur modern dengan fokus pada performa, keamanan, dan
+              kemudahan pengembangan jangka panjang.
+            </p>
+          </a-card>
+        </a-col>
 
-      <a-col :xs="24" :md="8">
-        <a-card hoverable class="service-card">
-          <div class="icon system" />
-          <h3>Business Systems</h3>
-          <p>ERP, POS, and internal systems to streamline operations and improve efficiency.</p>
-        </a-card>
-      </a-col>
+        <a-col :xs="24" :md="8">
+          <a-card class="service-card" hoverable>
+            <ApartmentOutlined class="icon" />
+            <h3>Business Systems</h3>
+            <p>
+              Sistem HRIS, PoS, Warehouse, dan internal yang dirancang untuk menyederhanakan alur
+              kerja, meningkatkan efisiensi, dan mendukung pertumbuhan bisnis.
+            </p>
+          </a-card>
+        </a-col>
 
-      <a-col :xs="24" :md="8">
-        <a-card hoverable class="service-card">
-          <div class="icon profile" />
-          <h3>Company Profile</h3>
-          <p>Professional and modern company profile websites that build trust and credibility.</p>
-        </a-card>
-      </a-col>
-    </a-row>
+        <a-col :xs="24" :md="8">
+          <a-card class="service-card" hoverable>
+            <GlobalOutlined class="icon" />
+            <h3>Corporate Website</h3>
+            <p>
+              Website company profile profesional yang menampilkan kredibilitas bisnis, pengalaman
+              pengguna yang baik, dan performa optimal.
+            </p>
+          </a-card>
+        </a-col>
+      </a-row>
+    </div>
   </section>
 </template>
 
-<style>
+<script setup lang="ts">
+import { CodeOutlined, ApartmentOutlined, GlobalOutlined } from '@ant-design/icons-vue'
+</script>
+
+<style scoped>
 .services {
-  text-align: center;
+  padding: 46px 24px;
+  background: #ffffff;
 }
-.section {
-  padding: 25px 24px;
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.section-title {
   text-align: center;
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 18px;
 }
 
-.section-subtitle {
-  max-width: 520px;
-  margin: 0 auto 56px;
-  color: #64748b;
-  font-size: 16px;
+.title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 0 auto 64px;
+  color: #6b7280;
+  font-size: 15px;
 }
 
 /* Card */
 .service-card {
   height: 100%;
-  border-radius: 20px;
-  padding: 10px 10px;
+  padding: 36px 32px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
   text-align: left;
-  transition: all 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
+  border-color: #1677ff;
+  transform: translateY(-6px);
 }
 
 /* Icon */
 .icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  margin-bottom: 24px;
-}
-
-.icon.web {
-  background: linear-gradient(135deg, #2563eb, #60a5fa);
-}
-
-.icon.system {
-  background: linear-gradient(135deg, #7c3aed, #c084fc);
-}
-
-.icon.profile {
-  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  font-size: 36px;
+  color: #1677ff;
+  margin-bottom: 20px;
 }
 
 /* Typography */
 .service-card h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .service-card p {
-  color: #64748b;
-  line-height: 1.7;
+  color: #6b7280;
+  line-height: 1.65;
+  font-size: 14px;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .service-card {
     text-align: center;
-  }
-
-  .icon {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 </style>

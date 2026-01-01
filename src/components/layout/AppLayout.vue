@@ -4,13 +4,10 @@
       <AppHeader />
     </a-layout-header>
 
-    <a-layout-content>
+    <a-layout-content class="content">
       <slot />
     </a-layout-content>
-
-    <a-layout-footer class="footer">
-      <AppFooter />
-    </a-layout-footer>
+    <AppFooter />
   </a-layout>
 </template>
 
@@ -24,7 +21,11 @@ import AppFooter from './AppFooter.vue'
   padding: 0 40px;
 }
 
+.content {
+  background: #fff;
+}
+
 .footer {
-  text-align: center;
+  text-align: start;
 }
 </style>

@@ -2,16 +2,14 @@
   <a-layout-footer class="footer">
     <div class="container">
       <a-row :gutter="[32, 32]">
-        <!-- Brand -->
         <a-col :xs="24" :md="10">
           <h2 class="brand">Deveen Business Systems</h2>
           <p class="desc">
-            Digital solutions for modern businesses. Helping companies grow through technology and
-            innovation.
+            Solusi digital untuk bisnis modern. Membantu perusahaan membangun sistem yang efisien,
+            scalable, dan siap bertumbuh melalui teknologi.
           </p>
         </a-col>
 
-        <!-- Navigation -->
         <a-col :xs="24" :md="7">
           <h4 class="title">Company</h4>
           <ul class="links">
@@ -23,11 +21,11 @@
           </ul>
         </a-col>
 
-        <!-- Contact -->
         <a-col :xs="24" :md="7">
           <h4 class="title">Contact</h4>
           <ul class="links">
             <li>Email: deveen.business@gmail.com</li>
+            <li>Phone: 081411126356</li>
             <li>Indonesia</li>
           </ul>
         </a-col>
@@ -37,12 +35,6 @@
 
       <div class="bottom">
         <span>© {{ year }} Deveen Business Systems</span>
-
-        <div class="social">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="GitHub">GitHub</a>
-        </div>
       </div>
     </div>
   </a-layout-footer>
@@ -57,11 +49,11 @@ const year = computed(() => new Date().getFullYear())
 .footer {
   background: linear-gradient(180deg, #0b1220 0%, #020617 100%);
   color: #e5e7eb;
-  padding: 72px 24px 32px;
+  padding: 72px 24px 32;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
