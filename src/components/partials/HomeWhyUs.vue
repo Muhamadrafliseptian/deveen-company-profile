@@ -3,7 +3,8 @@
     <div class="container">
       <h2 class="title">Kenapa Pilih Deveen?</h2>
       <p class="subtitle">
-        Kami membangun sistem digital yang andal, scalable, dan sesuai dengan proses bisnis Anda.
+        Dengan solusi digital dari kami, bisnis Anda bekerja lebih efisien, data lebih aman, dan
+        operasional lebih tertata.
       </p>
 
       <a-row :gutter="[32, 32]">
@@ -21,32 +22,32 @@
 
 <script setup lang="ts">
 import {
-  ApartmentOutlined,
-  CloudOutlined,
-  SafetyCertificateOutlined,
-  DeploymentUnitOutlined,
+  AppstoreOutlined, // Sistem rapi & mudah dipahami
+  RocketOutlined, // Siap berkembang bersama bisnis
+  SafetyCertificateOutlined, // Aman & terpercaya
+  CheckCircleOutlined, // Kualitas & stabil
 } from '@ant-design/icons-vue'
 
 const items = [
   {
-    icon: ApartmentOutlined,
-    title: 'Arsitektur Sistem Terstruktur',
-    desc: 'Perancangan arsitektur yang modular, terukur, dan selaras dengan proses bisnis.',
+    icon: AppstoreOutlined,
+    title: 'Sistem Rapi & Mudah Dipahami',
+    desc: 'Sistem digital yang terorganisir dan mudah digunakan, sesuai cara kerja bisnis Anda.',
   },
   {
-    icon: CloudOutlined,
-    title: 'Sistem Siap Bertumbuh',
-    desc: 'Infrastruktur cloud-ready untuk mendukung skalabilitas dan performa jangka panjang.',
+    icon: RocketOutlined,
+    title: 'Siap Berkembang Bersama Bisnis',
+    desc: 'Solusi yang fleksibel, bisa berkembang seiring pertumbuhan usaha tanpa repot.',
   },
   {
     icon: SafetyCertificateOutlined,
-    title: 'Keamanan Terstandar',
-    desc: 'Implementasi standar keamanan pada level aplikasi, data, dan infrastruktur.',
+    title: 'Aman & Terpercaya',
+    desc: 'Data dan sistem bisnis Anda terlindungi, sehingga Anda bisa fokus mengembangkan usaha.',
   },
   {
-    icon: DeploymentUnitOutlined,
-    title: 'Kualitas & Keandalan',
-    desc: 'Proses development teruji untuk memastikan sistem stabil dan mudah dikembangkan.',
+    icon: CheckCircleOutlined,
+    title: 'Kualitas & Stabil',
+    desc: 'Sistem yang handal dan stabil, sehingga operasional berjalan lancar setiap hari.',
   },
 ]
 </script>
@@ -75,6 +76,7 @@ const items = [
   max-width: 680px;
   margin: 0 auto 56px;
   font-size: 15px;
+  line-height: 1.5;
 }
 
 .why-card {

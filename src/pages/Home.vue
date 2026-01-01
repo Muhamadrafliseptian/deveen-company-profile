@@ -5,13 +5,13 @@
       <a-row align="middle" :gutter="[32, 32]">
         <a-col :xs="24" :md="12">
           <h1 class="hero-title">
-            Solusi Digital<br />
-            untuk Bisnis Modern
+            Bikin Bisnis Lebih Rapi<br />
+            dengan Sistem Digital
           </h1>
 
           <p class="hero-desc">
-            Deveen Business Systems membantu perusahaan membangun sistem yang scalable,
-            mengotomatisasi operasional, dan bertumbuh melalui teknologi yang tepat.
+            Kami membantu bisnis beralih dari cara manual ke sistem digital agar pekerjaan lebih
+            cepat, data lebih aman, dan usaha lebih mudah berkembang.
           </p>
 
           <a-space>

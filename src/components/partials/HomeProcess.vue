@@ -3,8 +3,8 @@
     <div class="container">
       <h2 class="title">Proses Kerja Kami</h2>
       <p class="subtitle">
-        Alur kerja terstruktur dan transparan untuk menghasilkan sistem digital yang andal, aman,
-        dan siap dikembangkan.
+        Langkah-langkah kerja kami sederhana dan jelas, agar sistem yang dibuat aman, rapi, dan
+        langsung bisa dipakai untuk mendukung usaha Anda.
       </p>
 
       <a-steps class="process-steps">
@@ -26,30 +26,30 @@
 <script setup lang="ts">
 import {
   SearchOutlined,
-  ApartmentOutlined,
-  CodeOutlined,
+  AppstoreOutlined,
+  RocketOutlined,
   CloudUploadOutlined,
 } from '@ant-design/icons-vue'
 
 const steps = [
   {
-    title: 'Discovery & Analysis',
-    desc: 'Memahami kebutuhan bisnis, alur kerja, serta tantangan teknis secara menyeluruh.',
+    title: 'Kenali Bisnis Anda',
+    desc: 'Kami memahami kebutuhan usaha, masalah yang dihadapi, dan cara kerja bisnis Anda.',
     icon: SearchOutlined,
   },
   {
-    title: 'System Architecture',
-    desc: 'Merancang arsitektur sistem yang scalable, aman, dan siap untuk pengembangan jangka panjang.',
-    icon: ApartmentOutlined,
+    title: 'Rancang Sistem Rapi',
+    desc: 'Membuat sistem yang mudah digunakan, rapi, dan sesuai dengan alur kerja usaha Anda.',
+    icon: AppstoreOutlined,
   },
   {
-    title: 'Engineering & QA',
-    desc: 'Pengembangan sistem dengan standar engineering, pengujian, dan quality assurance.',
-    icon: CodeOutlined,
+    title: 'Sistem Siap Pakai',
+    desc: 'Sistem dibuat agar langsung bisa dipakai untuk menjalankan operasional bisnis sehari-hari.',
+    icon: RocketOutlined,
   },
   {
-    title: 'Deployment & Support',
-    desc: 'Implementasi ke server produksi, monitoring, serta dukungan berkelanjutan.',
+    title: 'Bantuan & Panduan',
+    desc: 'Kami membantu memasang sistem dan memberikan panduan supaya tim Anda bisa langsung menggunakannya.',
     icon: CloudUploadOutlined,
   },
 ]
@@ -78,7 +78,8 @@ const steps = [
   color: #6b7280;
   max-width: 720px;
   margin: 0 auto 50px;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 /* Steps container */

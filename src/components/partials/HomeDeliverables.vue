@@ -3,8 +3,8 @@
     <div class="container">
       <h2 class="title">Apa yang Anda Dapatkan?</h2>
       <p class="subtitle">
-        Deliverables profesional yang dirancang untuk memastikan kualitas, skalabilitas, dan
-        keberlanjutan sistem dalam jangka panjang.
+        Hasil kerja profesional yang membuat sistem bisnis Anda lebih rapi, mudah digunakan, dan
+        siap mendukung pertumbuhan usaha.
       </p>
 
       <a-row :gutter="[32, 32]">
@@ -28,35 +28,35 @@
 const deliverables = [
   {
     icon: 'architecture',
-    title: 'Arsitektur Sistem',
-    desc: 'Perancangan sistem yang terstruktur dan disesuaikan dengan kebutuhan bisnis Anda.',
+    title: 'Sistem Terstruktur',
+    desc: 'Sistem digital yang rapi, mudah dipahami, dan disesuaikan dengan kebutuhan bisnis Anda.',
     points: [
-      'Struktur aplikasi yang jelas dan modular',
-      'Desain data yang scalable',
-      'Pendekatan API-first untuk integrasi',
-      'Desain keamanan dan kontrol akses',
+      'Alur aplikasi jelas dan mudah diikuti',
+      'Data tersusun rapi untuk memudahkan pengelolaan',
+      'Sistem siap diintegrasikan dengan layanan lain jika dibutuhkan',
+      'Keamanan dan kontrol akses terjaga',
     ],
   },
   {
     icon: 'code',
-    title: 'Kode Siap Produksi',
-    desc: 'Kode bersih, mudah dikembangkan, dan siap digunakan di lingkungan produksi.',
+    title: 'Sistem Siap Digunakan',
+    desc: 'Sistem yang langsung bisa dipakai, mudah dioperasikan, dan tidak membingungkan.',
     points: [
-      'Standar clean code dan best practices',
-      'Repository dengan version control',
-      'Setup testing dasar',
-      'Proses review untuk menjaga kualitas',
+      'Mudah digunakan oleh tim atau karyawan',
+      'Proses operasional lebih tertata dan efisien',
+      'Langsung siap dijalankan tanpa hambatan',
+      'Terjaga kualitasnya agar selalu stabil',
     ],
   },
   {
     icon: 'deployment',
-    title: 'Deployment & Dokumentasi',
-    desc: 'Proses peluncuran sistem yang rapi dengan dokumentasi teknis yang lengkap.',
+    title: 'Peluncuran & Panduan',
+    desc: 'Proses implementasi yang rapi dengan panduan yang mudah diikuti.',
     points: [
-      'Panduan deployment yang jelas',
-      'Konfigurasi environment',
-      'Monitoring dasar sistem',
-      'Dokumentasi teknis untuk tim internal',
+      'Panduan penggunaan dan setup jelas',
+      'Konfigurasi sistem sesuai kebutuhan bisnis',
+      'Monitoring dasar untuk memastikan sistem berjalan lancar',
+      'Dokumentasi mudah dipahami untuk tim internal',
     ],
   },
 ]
@@ -84,7 +84,8 @@ const deliverables = [
   max-width: 640px;
   margin: 0 auto 64px;
   color: #64748b;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 /* Card */

@@ -3,18 +3,18 @@
     <div class="container">
       <h2 class="title">Layanan Kami</h2>
       <p class="subtitle">
-        Kami merancang dan membangun sistem digital yang stabil, scalable, dan selaras dengan proses
-        bisnis Anda.
+        Dari website hingga sistem operasional, kami membantu bisnis bekerja lebih efisien dengan
+        solusi digital yang tepat.
       </p>
 
       <a-row :gutter="[32, 32]">
         <a-col :xs="24" :md="8">
           <a-card class="service-card" hoverable>
             <CodeOutlined class="icon" />
-            <h3>Web Application</h3>
+            <h3>Aplikasi Web</h3>
             <p>
-              Aplikasi web berbasis arsitektur modern dengan fokus pada performa, keamanan, dan
-              kemudahan pengembangan jangka panjang.
+              Membuat aplikasi web yang mudah digunakan untuk mengelola bisnis Anda, aman, cepat,
+              dan siap dikembangkan sesuai kebutuhan.
             </p>
           </a-card>
         </a-col>
@@ -22,10 +22,10 @@
         <a-col :xs="24" :md="8">
           <a-card class="service-card" hoverable>
             <ApartmentOutlined class="icon" />
-            <h3>Business Systems</h3>
+            <h3>Sistem Bisnis</h3>
             <p>
-              Sistem HRIS, PoS, Warehouse, dan internal yang dirancang untuk menyederhanakan alur
-              kerja, meningkatkan efisiensi, dan mendukung pertumbuhan bisnis.
+              Sistem HRIS, PoS, dan Warehouse untuk menyederhanakan pekerjaan sehari-hari,
+              meningkatkan efisiensi, dan mendukung pertumbuhan usaha.
             </p>
           </a-card>
         </a-col>
@@ -33,10 +33,10 @@
         <a-col :xs="24" :md="8">
           <a-card class="service-card" hoverable>
             <GlobalOutlined class="icon" />
-            <h3>Corporate Website</h3>
+            <h3>Website Perusahaan</h3>
             <p>
-              Website company profile profesional yang menampilkan kredibilitas bisnis, pengalaman
-              pengguna yang baik, dan performa optimal.
+              Website company profile profesional untuk menampilkan kredibilitas bisnis, menarik
+              pelanggan, dan memberi pengalaman pengguna yang nyaman.
             </p>
           </a-card>
         </a-col>

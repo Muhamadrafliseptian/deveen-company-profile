@@ -7,8 +7,8 @@
           <p class="subtitle">{{ subtitle }}</p>
           <div class="trust">
             <span>✓ Diskusi & Analisis Kebutuhan</span>
-            <span>✓ Rekomendasi Teknologi yang Tepat</span>
-            <span>✓ Pendekatan Bertahap & Realistis</span>
+            <span>✓ Pilihan Sistem yang Mudah Dipakai</span>
+            <span>✓ Langkah Praktis & Sesuai Budget</span>
           </div>
         </a-col>
 
