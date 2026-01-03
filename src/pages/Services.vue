@@ -116,7 +116,7 @@ const goToCheckout = async (planId: number) => {
   loading.value = true
 
   try {
-    const res = await CheckoutService.createCheckout(planId)
+    const res = await CheckoutService.checkoutCp(planId)
 
     if (res.success && res.data?.payment_url) {
       window.location.href = res.data.payment_url
