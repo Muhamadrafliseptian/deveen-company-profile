@@ -16,7 +16,7 @@
 
           <a-space>
             <a-button type="primary" size="large">Mulai Konsultasi</a-button>
-            <a-button size="large">Lihat Layanan</a-button>
+            <!-- <a-button size="large">Lihat Layanan</a-button> -->
           </a-space>
         </a-col>
 

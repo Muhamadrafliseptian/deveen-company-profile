@@ -2,14 +2,15 @@
   <a-layout-header class="header">
     <RouterLink to="/" class="logo">
       <img src="@/assets/images/logo.png" alt="Deveen Business Systems" />
+      <span style="color: white; font-size: 2vw; font-weight: bold">Harmoni Tech</span>
     </RouterLink>
 
     <!-- Desktop Menu -->
     <a-menu mode="horizontal" theme="dark" class="desktop-menu">
       <a-menu-item key="home"><RouterLink to="/">Home</RouterLink></a-menu-item>
-      <a-menu-item key="about"><RouterLink to="/about">About</RouterLink></a-menu-item>
+      <!-- <a-menu-item key="about"><RouterLink to="/about">About</RouterLink></a-menu-item>
       <a-menu-item key="services"><RouterLink to="/services">Services</RouterLink></a-menu-item>
-      <a-menu-item key="portfolio"><RouterLink to="/portfolio">Portfolio</RouterLink></a-menu-item>
+      <a-menu-item key="portfolio"><RouterLink to="/portfolio">Portfolio</RouterLink></a-menu-item> -->
       <a-menu-item key="contact"><RouterLink to="/contact">Contact</RouterLink></a-menu-item>
     </a-menu>
 
@@ -24,7 +25,7 @@
         <a-menu-item key="home" @click="drawerVisible = false"
           ><RouterLink to="/">Home</RouterLink></a-menu-item
         >
-        <a-menu-item key="about" @click="drawerVisible = false"
+        <!-- <a-menu-item key="about" @click="drawerVisible = false"
           ><RouterLink to="/about">About</RouterLink></a-menu-item
         >
         <a-menu-item key="services" @click="drawerVisible = false"
@@ -32,7 +33,7 @@
         >
         <a-menu-item key="portfolio" @click="drawerVisible = false"
           ><RouterLink to="/portfolio">Portfolio</RouterLink></a-menu-item
-        >
+        > -->
         <a-menu-item key="contact" @click="drawerVisible = false"
           ><RouterLink to="/contact">Contact</RouterLink></a-menu-item
         >
