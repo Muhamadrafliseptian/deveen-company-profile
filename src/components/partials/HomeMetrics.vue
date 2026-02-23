@@ -7,7 +7,7 @@
         operasional lebih tertata. Kami siap membuat sistem untuk memenuhi kebutuhan bisnis Anda.
       </p>
       <a-row :gutter="[32, 32]">
-        <a-col v-for="(item, index) in metrics" :key="item.label" :xs="24" :sm="12" :md="6">
+        <a-col v-for="(item, index) in metrics" :key="item.value" :xs="24" :sm="12" :md="6">
           <div
             ref="metricRefs"
             class="metric"
@@ -15,7 +15,6 @@
           >
             <component :is="item.icon" class="metric-icon" />
             <div class="value">{{ item.value }}</div>
-            <div class="label">{{ item.label }}</div>
             <div class="desc">{{ item.desc }}</div>
           </div>
         </a-col>
