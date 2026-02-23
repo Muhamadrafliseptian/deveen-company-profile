@@ -1,6 +1,11 @@
 <template>
   <section class="metrics">
     <div class="container">
+      <h2 class="title">Kenapa Pilih Kami?</h2>
+      <p class="subtitle">
+        Dengan solusi digital dari kami, bisnis Anda bekerja lebih efisien, data lebih aman, dan
+        operasional lebih tertata. Kami siap membuat sistem untuk memenuhi kebutuhan bisnis Anda.
+      </p>
       <a-row :gutter="[32, 32]">
         <a-col v-for="(item, index) in metrics" :key="item.label" :xs="24" :sm="12" :md="6">
           <div
@@ -22,10 +27,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import {
-  LockOutlined,
   RocketOutlined,
-  ClockCircleOutlined,
   SafetyCertificateOutlined,
+  AppstoreOutlined,
+  CheckCircleOutlined,
 } from '@ant-design/icons-vue'
 
 const metricRefs = ref<HTMLElement[]>([])
@@ -47,32 +52,28 @@ onMounted(() => {
 
 const metrics = [
   {
-    value: '100% Aman',
-    label: 'Data Terlindungi',
-    desc: 'Semua informasi bisnis Anda tersimpan dengan aman, sehingga Anda bisa fokus mengembangkan usaha.',
+    icon: AppstoreOutlined,
+    value: 'Sistem Rapi & Mudah Dipahami',
+    desc: 'Sistem digital yang terorganisir, modern dan mudah digunakan.',
     gradient: 'linear-gradient(135deg, #2563eb, #7c3aed)',
-    icon: LockOutlined,
   },
   {
-    value: 'Langsung Pakai',
-    label: 'Sistem Siap Digunakan',
-    desc: 'Sistem yang kami buat langsung bisa dipakai untuk operasional sehari-hari tanpa ribet.',
-    gradient: 'linear-gradient(135deg, #7c3aed, #2563eb)',
     icon: RocketOutlined,
+    value: 'Siap Berkembang Bersama Bisnis',
+    desc: 'Solusi fleksibel, dapat berkembang mengikuti pertumbuhan usaha.',
+    gradient: 'linear-gradient(135deg, #7c3aed, #2563eb)',
   },
   {
-    value: '< 24 Jam',
-    label: 'Respon Cepat',
-    desc: 'Jika ada kendala atau pertanyaan, tim kami siap membantu dengan cepat.',
     gradient: 'linear-gradient(135deg, #020617, #2563eb)',
-    icon: ClockCircleOutlined,
+    icon: SafetyCertificateOutlined,
+    value: 'Aman & Terpercaya',
+    desc: 'Keamanan terjaga, sehingga Anda bisa fokus mengembangkan usaha.',
   },
   {
-    value: 'Stabil & Andal',
-    label: 'Sistem Handal',
-    desc: 'Sistem digital yang stabil dan lancar, mendukung bisnis Anda setiap hari.',
+    value: 'Kualitas & Stabil',
     gradient: 'linear-gradient(135deg, #7c3aed, #020617)',
-    icon: SafetyCertificateOutlined,
+    icon: CheckCircleOutlined,
+    desc: 'Sistem yang handal dan stabil, sehingga operasional berjalan lancar setiap hari.',
   },
 ]
 </script>
@@ -82,7 +83,21 @@ const metrics = [
   padding: 60px 24px;
   background: #f8fafc;
 }
+.title {
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
 
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  max-width: 680px;
+  margin: 0 auto 56px;
+  font-size: 15px;
+  line-height: 1.5;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

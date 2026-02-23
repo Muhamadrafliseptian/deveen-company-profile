@@ -81,7 +81,7 @@
 
               <div class="contact-box">
                 <p class="label">Email</p>
-                <p class="value">deveen.business@gmail.com</p>
+                <p class="value">harmonitech@gmail.com</p>
 
                 <p class="label">Waktu Respons</p>
                 <p class="value">&lt; 24 Jam Kerja</p>

@@ -11,8 +11,8 @@
         <a-col v-for="item in deliverables" :key="item.title" :xs="24" :md="8">
           <a-card hoverable class="deliverable-card">
             <div class="icon" :class="item.icon" />
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.desc }}</p>
+            <h3 style="margin: 0">{{ item.title }}</h3>
+            <p style="color: gray; font-style: italic">{{ item.desc }}</p>
 
             <ul>
               <li v-for="point in item.points" :key="point">{{ point }}</li>
@@ -27,6 +27,17 @@
 <script setup lang="ts">
 const deliverables = [
   {
+    icon: 'code',
+    title: 'Konsultasi Gratis',
+    desc: 'Diskusikan kebutuhan bisnis Anda bersama tim kami tanpa biaya dan tanpa komitmen.',
+    points: [
+      'Gratis konsultasi awal untuk memahami kebutuhan Anda',
+      'Solusi yang disesuaikan dengan bisnis Anda',
+      'Diskusi santai, jelas, dan mudah dipahami',
+      'Rekomendasi terbaik sebelum Anda memutuskan',
+    ],
+  },
+  {
     icon: 'architecture',
     title: 'Sistem Terstruktur',
     desc: 'Sistem digital yang rapi, mudah dipahami, dan disesuaikan dengan kebutuhan bisnis Anda.',
@@ -35,17 +46,6 @@ const deliverables = [
       'Data tersusun rapi untuk memudahkan pengelolaan',
       'Sistem siap diintegrasikan dengan layanan lain jika dibutuhkan',
       'Keamanan dan kontrol akses terjaga',
-    ],
-  },
-  {
-    icon: 'code',
-    title: 'Sistem Siap Digunakan',
-    desc: 'Sistem yang langsung bisa dipakai, mudah dioperasikan, dan tidak membingungkan.',
-    points: [
-      'Mudah digunakan oleh tim atau karyawan',
-      'Proses operasional lebih tertata dan efisien',
-      'Langsung siap dijalankan tanpa hambatan',
-      'Terjaga kualitasnya agar selalu stabil',
     ],
   },
   {

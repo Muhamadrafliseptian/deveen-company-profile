@@ -21,36 +21,87 @@
         </a-col>
 
         <a-col :xs="24" :md="12" class="hero-visual">
-          <div class="hero-box system-visual">
-            <a-card class="system-card company" bordered="false">
-              <GlobalOutlined />
-              <span>Coorporate Website</span>
-            </a-card>
-
-            <a-card class="system-card pos" bordered="false">
-              <ShopOutlined />
-              <span>PoS</span>
-            </a-card>
-
-            <a-card class="system-card hr" bordered="false">
-              <TeamOutlined />
-              <span>HRIS</span>
-            </a-card>
-
-            <a-card class="system-card wh" bordered="false">
-              <DatabaseOutlined />
-              <span>Warehouse</span>
-            </a-card>
+          <div class="hero-box">
+            <div
+              class="system-card logo"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation-delay: 1.2s;
+              "
+            >
+              <div bordered="false">
+                <img src="@/assets/images/icons/firebase.png" alt="Deveen Business Systems" />
+              </div>
+            </div>
+            <a-row style="display: flex; justify-content: space-between" :gutter="[20]">
+              <a-col
+                class="system-card logo"
+                style="display: flex; animation-delay: 0.6s; flex: 1; justify-content: center"
+              >
+                <img
+                  src="@/assets/images/icons/aws.png"
+                  alt="Deveen Business Systems"
+                  style="width: 100%; object-fit: contain"
+                />
+              </a-col>
+              <a-col
+                class="system-card logo"
+                style="display: flex; animation-delay: 0.6s; flex: 1; justify-content: center"
+              >
+                <img
+                  src="@/assets/images/icons/google-cloud.png"
+                  alt="Deveen Business Systems"
+                  style="width: 100%; object-fit: contain"
+                />
+              </a-col>
+            </a-row>
+            <div
+              class="system-card logo"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation-delay: 0.5s;
+              "
+            >
+              <div bordered="false">
+                <img
+                  src="@/assets/images/icons/google-playstore.png"
+                  alt="Deveen Business Systems"
+                />
+              </div>
+            </div>
           </div>
         </a-col>
+        <!-- <a-col :xs="24" :md="12" class="hero-visual">
+          <div class="hero-box system-visual">
+            <div class="system-card company logo" bordered="false">
+              <img src="@/assets/images/icons/google-cloud.png" alt="Deveen Business Systems" />
+            </div>
+
+            <div class="system-card pos logo" bordered="false">
+              <img src="@/assets/images/icons/firebase.png" alt="Deveen Business Systems" />
+            </div>
+
+            <div class="system-card hr logo" bordered="false">
+              <img src="@/assets/images/icons/aws.png" alt="Deveen Business Systems" />
+            </div>
+
+            <div class="system-card wh logo" bordered="false">
+              <img src="@/assets/images/icons/google-playstore.png" alt="Deveen Business Systems" />
+            </div>
+          </div>
+        </a-col> -->
       </a-row>
     </section>
 
     <HomeServices />
-    <HomeWhyUs />
-    <HomeDeliverables />
-    <HomeProcess />
     <HomeMetrics />
+    <!-- <HomeWhyUs /> -->
+    <HomeDeliverables />
+    <!-- <HomeProcess /> -->
     <CallToAction />
   </div>
 </template>
@@ -63,11 +114,18 @@ import HomeWhyUs from '@/components/partials/HomeWhyUs.vue'
 import HomeDeliverables from '@/components/partials/HomeDeliverables.vue'
 import HomeProcess from '@/components/partials/HomeProcess.vue'
 import { GlobalOutlined, ShopOutlined, TeamOutlined, DatabaseOutlined } from '@ant-design/icons-vue'
+
+const props = {}
 </script>
 
 <style scoped>
 .home {
   width: 100%;
+}
+
+.logo img {
+  height: 130px;
+  /* animation: float 6s ease-in-out infinite; */
 }
 
 /* HERO */
@@ -85,14 +143,14 @@ import { GlobalOutlined, ShopOutlined, TeamOutlined, DatabaseOutlined } from '@a
 }
 
 .system-card {
-  position: absolute;
+  /* position: absolute;
   width: 150px;
   text-align: center;
   border-radius: 14px;
   color: #fff;
   backdrop-filter: blur(14px);
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); */
   animation: float 6s ease-in-out infinite;
 }
 
@@ -110,26 +168,26 @@ import { GlobalOutlined, ShopOutlined, TeamOutlined, DatabaseOutlined } from '@a
 .company {
   top: 10px;
   left: 135px;
-  background: rgba(124, 58, 237, 0.7);
+  /* background: rgba(124, 58, 237, 0.7); */
   animation-delay: 0s;
 }
 
 .pos {
-  bottom: 40px;
+  top: 80px;
   left: 10px;
   animation-delay: 0.6s;
 }
 
 .hr {
-  bottom: 40px;
+  top: 80px;
   right: 10px;
   animation-delay: 1.2s;
 }
 
 .wh {
-  top: 130px;
+  top: 160px;
   left: 135px;
-  animation-delay: 1.8s;
+  animation-delay: 0s;
 }
 
 /* Float */
@@ -174,16 +232,16 @@ import { GlobalOutlined, ShopOutlined, TeamOutlined, DatabaseOutlined } from '@a
 }
 
 .hero-visual {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .hero-box {
   width: 100%;
-  max-width: 420px;
-  height: 280px;
+  /* max-width: 420px; */
   border-radius: 16px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  /* background: linear-gradient(135deg, #2563eb, #7c3aed); */
   opacity: 0.9;
 }
 

@@ -10,8 +10,10 @@
       <a-row :gutter="[32, 32]">
         <a-col :xs="24" :md="8">
           <a-card class="service-card" hoverable>
-            <CodeOutlined class="icon" />
-            <h3>Aplikasi Web</h3>
+            <div class="icon">
+              <img src="@/assets/images/icons/desktop.png" alt="" />
+            </div>
+            <h3>Desktop Application</h3>
             <p>
               Membuat aplikasi web yang mudah digunakan untuk mengelola bisnis Anda, aman, cepat,
               dan siap dikembangkan sesuai kebutuhan.
@@ -21,8 +23,10 @@
 
         <a-col :xs="24" :md="8">
           <a-card class="service-card" hoverable>
-            <ApartmentOutlined class="icon" />
-            <h3>Sistem Bisnis</h3>
+            <div class="icon">
+              <img src="@/assets/images/icons/web.png" alt="" />
+            </div>
+            <h3>Website Application</h3>
             <p>
               Sistem HRIS, PoS, dan Warehouse untuk menyederhanakan pekerjaan sehari-hari,
               meningkatkan efisiensi, dan mendukung pertumbuhan usaha.
@@ -32,8 +36,10 @@
 
         <a-col :xs="24" :md="8">
           <a-card class="service-card" hoverable>
-            <GlobalOutlined class="icon" />
-            <h3>Website Perusahaan</h3>
+            <div class="icon">
+              <img src="@/assets/images/icons/android.png" alt="" />
+            </div>
+            <h3>Mobile Application</h3>
             <p>
               Website company profile profesional untuk menampilkan kredibilitas bisnis, menarik
               pelanggan, dan memberi pengalaman pengguna yang nyaman.
@@ -89,11 +95,8 @@ import { CodeOutlined, ApartmentOutlined, GlobalOutlined } from '@ant-design/ico
   transform: translateY(-6px);
 }
 
-/* Icon */
-.icon {
-  font-size: 36px;
-  color: #1677ff;
-  margin-bottom: 20px;
+.icon img {
+  height: 50px;
 }
 
 /* Typography */

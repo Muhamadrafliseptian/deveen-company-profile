@@ -81,6 +81,7 @@ const goContact = () => {
   font-size: 17px;
   color: #e0e7ff;
   text-align: start;
+  margin: 0;
 }
 
 /* Trust line */

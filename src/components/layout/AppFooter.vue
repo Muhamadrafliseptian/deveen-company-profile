@@ -3,7 +3,7 @@
     <div class="container">
       <a-row :gutter="[32, 32]">
         <a-col :xs="24" :md="10">
-          <h2 class="brand">Deveen Business Systems</h2>
+          <h2 class="brand">Harmoni Tech</h2>
           <p class="desc">
             Solusi digital untuk bisnis modern. Membantu perusahaan membangun sistem yang efisien,
             scalable, dan siap bertumbuh melalui teknologi.
@@ -24,7 +24,7 @@
         <a-col :xs="24" :md="7">
           <h4 class="title">Contact</h4>
           <ul class="links">
-            <li>Email: deveen.business@gmail.com</li>
+            <li>Email: harmonitech@gmail.com</li>
             <li>Phone: 081411126356</li>
             <li>Indonesia</li>
           </ul>
@@ -34,7 +34,7 @@
       <a-divider class="divider" />
 
       <div class="bottom">
-        <span>© {{ year }} Deveen Business Systems</span>
+        <span>© {{ year }} Harmoni Tech</span>
       </div>
     </div>
   </a-layout-footer>

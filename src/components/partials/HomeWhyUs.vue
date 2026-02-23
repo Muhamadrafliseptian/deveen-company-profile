@@ -1,10 +1,10 @@
 <template>
   <section class="why">
     <div class="container">
-      <h2 class="title">Kenapa Pilih Deveen?</h2>
+      <h2 class="title">Kenapa Pilih Kami?</h2>
       <p class="subtitle">
         Dengan solusi digital dari kami, bisnis Anda bekerja lebih efisien, data lebih aman, dan
-        operasional lebih tertata.
+        operasional lebih tertata. Kami siap membuat sistem untuk memenuhi kebutuhan bisnis Anda.
       </p>
 
       <a-row :gutter="[32, 32]">
@@ -32,17 +32,17 @@ const items = [
   {
     icon: AppstoreOutlined,
     title: 'Sistem Rapi & Mudah Dipahami',
-    desc: 'Sistem digital yang terorganisir dan mudah digunakan, sesuai cara kerja bisnis Anda.',
+    desc: 'Sistem digital yang terorganisir, modern dan mudah digunakan.',
   },
   {
     icon: RocketOutlined,
     title: 'Siap Berkembang Bersama Bisnis',
-    desc: 'Solusi yang fleksibel, bisa berkembang seiring pertumbuhan usaha tanpa repot.',
+    desc: 'Solusi fleksibel, dapat berkembang mengikuti pertumbuhan usaha.',
   },
   {
     icon: SafetyCertificateOutlined,
     title: 'Aman & Terpercaya',
-    desc: 'Data dan sistem bisnis Anda terlindungi, sehingga Anda bisa fokus mengembangkan usaha.',
+    desc: 'Keamanan terjaga, sehingga Anda bisa fokus mengembangkan usaha.',
   },
   {
     icon: CheckCircleOutlined,
